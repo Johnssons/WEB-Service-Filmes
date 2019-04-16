@@ -7,7 +7,7 @@ package br.metodista.modelo;
 
 /**
  *
- * @author u18206
+ * @author u18206 & 18181
  */
 public class Filme
 {
@@ -34,7 +34,7 @@ public class Filme
 
     public void setId(Long id) throws Exception {
         if (id <= 0)
-            throw new Exception("ID inválido!");
+            throw new Exception("ID invÃ¡lido!");
         
         this.id = id;
     }
@@ -45,7 +45,7 @@ public class Filme
 
     public void setFilme(String filme) throws Exception {
         if (filme == null)
-            throw new Exception("Nome de filme inválido!");
+            throw new Exception("Nome de filme invÃ¡lido!");
             
         this.filme = filme;
     }
@@ -56,7 +56,7 @@ public class Filme
 
     public void setSinopse(String sinopse) throws Exception {
         if (sinopse == null)
-            throw new Exception("Sinopse inválida!");
+            throw new Exception("Sinopse invÃ¡lida!");
         
         this.sinopse = sinopse;
     }
@@ -67,7 +67,7 @@ public class Filme
 
     public void setGenero(String genero) throws Exception {
         if (genero == null)
-            throw new Exception("Gênero inválido!");
+            throw new Exception("GÃªnero invÃ¡lido!");
         
         this.genero = genero;
     }
@@ -78,7 +78,7 @@ public class Filme
 
     public void setDuracao(Integer duracao) throws Exception {
         if (duracao <= 0)
-            throw new Exception("Duração inválida!");
+            throw new Exception("DuraÃ§Ã£o invÃ¡lida!");
         
         this.duracao = duracao;
     }
@@ -89,7 +89,7 @@ public class Filme
 
     public void setTrailer(String trailer) throws Exception {
         if (trailer == null)
-            throw new Exception("Trailer inválido!");
+            throw new Exception("Trailer invÃ¡lido!");
         
         this.trailer = trailer;
     }
@@ -99,8 +99,8 @@ public class Filme
             return "ID:      " + this.id      + "\n" +
                    "Filme:   " + this.filme   + "\n" +
                    "Sinopse: " + this.sinopse + "\n" +
-                   "Gênero:  " + this.genero  + "\n" +
-                   "Duração: " + this.duracao + "\n" +
+                   "GÃªnero:  " + this.genero  + "\n" +
+                   "DuraÃ§Ã£o: " + this.duracao + "\n" +
                    "Trailer: " + this.trailer;
     }
 
